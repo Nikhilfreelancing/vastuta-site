@@ -1,7 +1,21 @@
 {
-	"name": "Vastuta renewables",
-	"short_name": "Vastuta renewables",
+	"name": "Vastuta Renewables",
+	"short_name": "Vastuta Renewables",
 	"start_url": ".",
-	"background_color": "#6dvdb1",
-	"theme_color": "#009578"
+	"background_color": "#6dcdb1",
+	"theme_color": "#009578",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "images/logo192.jpg",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+
+		{
+			"src": "images/logo512.jpg",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
 }
