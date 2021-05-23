@@ -1537,7 +1537,7 @@ input[type=submit]:hover {
       
 
 <div class="container11">
-  <form action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" name="contact-form" id="contact" method="POST">
+  <form action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" name="contact-form" id="cont" method="POST">
 
     <label for="fname">Name</label>
     <input type="text" id="name" name="name" class="name" placeholder="Your name.." required>
@@ -1564,6 +1564,7 @@ input[type=submit]:hover {
     <br>
     <br>
 <h5 id="demo" style="text-align: center; background-color: lightblue"></h5>
+
 <script type="text/javascript">
   function myfun()
 {
@@ -1572,6 +1573,7 @@ input[type=submit]:hover {
       var email = $("#email").val();
       var phone = $("#phone").val();
       var message = $("#message").val();
+      
 
       if (name == '' || email == '' || phone == '' || message == ''){
         y = "Please Enter all the fields";
@@ -1581,9 +1583,13 @@ input[type=submit]:hover {
 
            x = "Thanks, Your query has been submitted!!";
          document.getElementById("demo").innerHTML = x;
+         $('#cont')[0].reset();
       }
-      document.contact-form.submit();
-      document.contact-form.reset();
+      
+      // var frm = document.getElementsByName(contact-form)[0];
+      // frm.submit();
+      // frm.reset();
+      // return false;
 } 
 </script>
   </form>
