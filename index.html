@@ -80,6 +80,7 @@ input[type=submit]:hover {
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -1532,35 +1533,24 @@ input[type=submit]:hover {
 
         <div class="row">
 
-          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="container11" id="cont">
-              <h4 style="text-align: center;"><strong>For free consultation, contact us!</strong></h4>
-              <form id="myForm" action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" method="POST">
-            
-                <label for="fname">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name.." required>
-            
-                <label for="mob">Mobile Number </label>
-                <input type="tel" id="phone" name="phone" placeholder="Your Mobile Number" required>
-            
-             <label for="fname">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-                 <label for="fname">Message</label>
-                <input type="text" id="message" name="message" placeholder="Your message" required>
-                <input type="hidden" name = "_next" value="https://vastuta.in/#contact">
-   	        <input type="hidden" name="_captcha" value="false">
+          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100" id="contact">
+   <form action="https://formsubmit.co/nikhilkhandelwal2021@gmail.com" method="POST" id="contact-form">
+    <input type="text" id="name" placeholder="Name" class="form-control"><br>
+    <input type="email" id="email" placeholder="Name" class="form-control"><br>
+    <input type="num" id="phone" placeholder="Name" class="form-control"><br>
+    <input type="text" id="message" placeholder="Name" class="form-control"><br>
+     
+<!--      <input type="hidden" name="_next" value="https://affectionate-noyce-c911f3.netlify.app/#contact">
+ -->
+      <input type="hidden" name = "_next" value="https://vastuta.in/#contact">
+    <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
 
-   	        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-                <br>
-                <br>
-          
-           
-              </form>
-            </div>
-          </div>
+    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+
+
+   </form>
+</div>
 
           <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
             <div class="info">
@@ -1675,46 +1665,48 @@ input[type=submit]:hover {
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/success.js"></script>
 
-  <script>
-    	
+      <script>
+      
       $("#submit").click(function() {
 
-var name = $("#name").val();
-var email = $("#email").val();
-var phone = $("#phone").val();
-var message = $("#message").val();
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var phone = $("#phone").val();
+      var message = $("#message").val();
 
-if (name == '' || email == '' || phone == '' || message == '') {
+      if (name == '' || email == '' || phone == '' || message == '') {
 
-  swal({
-    title: "Fields Empty!",
-    text: "Please check the missing fileds",
-    icon: "warning",
-    button: "Ok",
-  })
-} else {
+        swal({
+          title: "Fields Empty!",
+          text: "Please check the missing fileds",
+          icon: "warning",
+          button: "Ok",
+        })
+      } else {
 
-  swal({
-    title: "Thanks for submiiting your query!",
-    icon: "success",
-    button: "Ok",
-  })
-  document.getElementById("name").value = '';
-document.getElementById("email").value = '';
-document.getElementById("phone").value = '';
-document.getElementById("message").value = '';
-}
+        swal({
+          title: "Thanks for submiiting your query!",
+          icon: "success",
+          button: "Ok",
+        })
+        document.querySelector("#contact-form").reset();
+
+      }
 
 
-})
+    })
 
-  </script>
 
+    </script>
 
 
 </body>
