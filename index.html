@@ -1533,24 +1533,62 @@ input[type=submit]:hover {
 
         <div class="row">
 
-          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100" id="contact">
-   <form action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" method="POST" id="contact-form">
-    <input type="text" id="name" placeholder="Name" class="form-control"><br>
-    <input type="email" id="email" placeholder="Name" class="form-control"><br>
-    <input type="num" id="phone" placeholder="Name" class="form-control"><br>
-    <input type="text" id="message" placeholder="Name" class="form-control"><br>
-     
-<!--      <input type="hidden" name="_next" value="https://affectionate-noyce-c911f3.netlify.app/#contact">
- -->
-      <input type="hidden" name = "_next" value="https://vastuta.in/#contact">
-    <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
+          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+      
 
-    <button type="submit" id="submit" class="btn btn-primary" onClick="success()">Submit</button>
+<div class="container11">
+  <form action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" id="contact" method="POST">
+
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="name" class="name" placeholder="Your name.." required>
+
+    <label for="mob">Mobile Number </label>
+    <input type="tel" id="phone" name="phone" class="phone" placeholder="Your Mobile Number" required>
+
+ <label for="fname">Email</label>
+    <input type="email" id="email" name="email" class="email" placeholder="Your Email" required>
+
+     <label for="fname">Message</label>
+    <input type="text" id="message" name="message" class="message" placeholder="Your message" required>
+    <input type="hidden" name="_next" value="https://vastutarenewables.netlify.app/#contact">
 
 
-   </form>
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+
+
+
+
+    <input type="submit" value="Submit" class="submit" onclick="myfun()">
+    <br>
+    <br>
+<h5 id="demo" style="text-align: center; background-color: lightblue"></h5>
+<script type="text/javascript">
+  function myfun()
+{
+
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var phone = $("#phone").val();
+      var message = $("#message").val();
+
+      if (name == '' || email == '' || phone == '' || message == ''){
+        y = "Please Enter all the fields";
+        document.getElementById("demo").innerHTML = y;
+      }
+      else{
+
+           x = "Thanks, Your query has been submitted!!";
+         document.getElementById("demo").innerHTML = x;
+      }
+} 
+</script>
+  </form>
 </div>
+          </div>
+
+          
 
           <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
             <div class="info">
@@ -1573,14 +1611,13 @@ input[type=submit]:hover {
 
             </div>
           </div>
-        
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="contact-about">
               <h3>Vastuta Renewables</h3>
               <p style="text-align:left;"> Vastuta Renewables is a relative newcomer to the industry, incorporating in year
                 2020. Vastuta Renewables dedicates itself exclusively to the business of solar
-                energy. Our aim is to generate energy for the future. Solar power remains the most
+                energy. Our aim is to generate energy for the future. Solar power remains the most
                 secure source of energy for the future. Vastuta Renewables offers complete asset
                 Management.</p>
               <div class="social-links">
@@ -1592,7 +1629,8 @@ input[type=submit]:hover {
               <p style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d649.1696433193657!2d72.50379686041423!3d23.014295349461555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xad43e81aa75db48f!2sShapath%20v!5e0!3m2!1sen!2sus!4v1621569740572!5m2!1sen!2sus" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
             </div>
           </div>
-          
+
+    
 
         </div>
 
@@ -1666,8 +1704,7 @@ input[type=submit]:hover {
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <!-- Template Main JS File -->
