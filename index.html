@@ -1549,17 +1549,11 @@ input[type=submit]:hover {
             
                  <label for="fname">Message</label>
                 <input type="text" id="message" name="message" placeholder="Your message" required>
-                <input type="hidden" name="_next" value="https://vastuta.in/#contact">
-            
-            
-            
-            <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name = "_next" value="https://vastuta.in/#contact">
+   	        <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
-            
-            
-            
-            
-            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+
+   	        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
                 <br>
                 <br>
           
@@ -1688,36 +1682,36 @@ input[type=submit]:hover {
 
   <script>
     	
-    $("#submit").click(function() {
+      $("#submit").click(function() {
 
-      var name = $("#name").val();
-      var email = $("#email").val();
-      var phone = $("#phone").val();
-      var message = $("#message").val();
+var name = $("#name").val();
+var email = $("#email").val();
+var phone = $("#phone").val();
+var message = $("#message").val();
 
-      if (name == '' || email == '' || phone == '' || message == '') {
+if (name == '' || email == '' || phone == '' || message == '') {
 
-        swal({
-          title: "Fields Empty!",
-          text: "Please check the missing fileds",
-          icon: "warning",
-          button: "Ok",
-        })
-      } else {
+  swal({
+    title: "Fields Empty!",
+    text: "Please check the missing fileds",
+    icon: "warning",
+    button: "Ok",
+  })
+} else {
 
-        swal({
-          title: "Thanks for submiiting your query!",
-          icon: "success",
-          button: "Ok",
-        })
-        document.getElementById("name").value = '';
-      document.getElementById("email").value = '';
-      document.getElementById("phone").value = '';
-      document.getElementById("message").value = '';
-      }
+  swal({
+    title: "Thanks for submiiting your query!",
+    icon: "success",
+    button: "Ok",
+  })
+  document.getElementById("name").value = '';
+document.getElementById("email").value = '';
+document.getElementById("phone").value = '';
+document.getElementById("message").value = '';
+}
 
 
-    })
+})
 
   </script>
 
