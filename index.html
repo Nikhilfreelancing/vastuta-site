@@ -1537,7 +1537,7 @@ input[type=submit]:hover {
       
 
 <div class="container11">
-  <form action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" id="contact" method="POST">
+  <form action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" name="contact-form" id="contact" method="POST">
 
     <label for="fname">Name</label>
     <input type="text" id="name" name="name" class="name" placeholder="Your name.." required>
@@ -1560,7 +1560,7 @@ input[type=submit]:hover {
 
 
 
-    <input type="submit" value="Submit" class="submit" onclick="myfun()">
+    <input type="submit" value="Submit" id="submit" onclick="myfun()">
     <br>
     <br>
 <h5 id="demo" style="text-align: center; background-color: lightblue"></h5>
@@ -1582,6 +1582,8 @@ input[type=submit]:hover {
            x = "Thanks, Your query has been submitted!!";
          document.getElementById("demo").innerHTML = x;
       }
+      document.contact-form.submit();
+      document.contact-form.reset();
 } 
 </script>
   </form>
