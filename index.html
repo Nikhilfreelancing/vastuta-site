@@ -1536,7 +1536,7 @@ input[type=submit]:hover {
 
             <div class="container11" id="cont">
               <h4 style="text-align: center;"><strong>For free consultation, contact us!</strong></h4>
-              <form action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" method="POST">
+              <form id="myForm" action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" method="POST">
             
                 <label for="fname">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name.." required>
@@ -1549,7 +1549,7 @@ input[type=submit]:hover {
             
                  <label for="fname">Message</label>
                 <input type="text" id="message" name="message" placeholder="Your message" required>
-                <input type="hidden" name="_next" value="https://vastuta.in/#cont">
+                <input type="hidden" name="_next" value="https://vastuta.in/#contact">
             
             
             
@@ -1559,17 +1559,11 @@ input[type=submit]:hover {
             
             
             
-                <input type="submit" value="Submit" onclick="myfun()">
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
                 <br>
                 <br>
-            <h5 id="demo"></h5>
-            <script type="text/javascript">
-              function myfun()
-            {
-               x = "Thanks, Your query has been submitted!!";
-               document.getElementById("demo").innerHTML = x;
-            } 
-            </script>
+          
+           
               </form>
             </div>
           </div>
@@ -1686,10 +1680,48 @@ input[type=submit]:hover {
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/success.js"></script>
+
+  <script>
+    	
+    $("#submit").click(function() {
+
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var phone = $("#phone").val();
+      var message = $("#message").val();
+
+      if (name == '' || email == '' || phone == '' || message == '') {
+
+        swal({
+          title: "Fields Empty!",
+          text: "Please check the missing fileds",
+          icon: "warning",
+          button: "Ok",
+        })
+      } else {
+
+        swal({
+          title: "Thanks for submiiting your query!",
+          icon: "success",
+          button: "Ok",
+        })
+        document.getElementById("name").value = '';
+      document.getElementById("email").value = '';
+      document.getElementById("phone").value = '';
+      document.getElementById("message").value = '';
+      }
+
+
+    })
+
+  </script>
+
+
 
 </body>
 
