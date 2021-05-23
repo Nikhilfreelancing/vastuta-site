@@ -1533,18 +1533,17 @@ input[type=submit]:hover {
 
         <div class="row">
 
-          <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100" id="contact">
-   <form action="https://formsubmit.co/nikhilkhandelwal.it20@gmail.com" method="POST" id="contact-form">
-    <input type="text" id="name" placeholder="Name" class="form-control"><br>
-    <input type="email" id="email" placeholder="Name" class="form-control"><br>
-    <input type="num" id="phone" placeholder="Name" class="form-control"><br>
-    <input type="text" id="message" placeholder="Name" class="form-control"><br>
+    <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100" id="contact">
+   <form action="contact.php" method="POST" id="contact-form">
+    <input type="text" id="name" name="name" placeholder="Name" class="form-control"><br>
+    <input type="email" id="email" name="email" placeholder="Name" class="form-control"><br>
+    <input type="num" id="phone" name="phone" placeholder="Name" class="form-control"><br>
+    <input type="text" id="message" name="message" placeholder="Name" class="form-control"><br>
      
-<!--      <input type="hidden" name="_next" value="https://affectionate-noyce-c911f3.netlify.app/#contact">
- -->
-      <input type="hidden" name = "_next" value="https://vastuta.in/#contact">
+
+    <!-- <input type="hidden" name = "_next" value="https://vastuta.in/#contact">
     <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_template" value="table"> -->
 
     <button type="submit" id="submit" class="btn btn-primary">Submit</button>
 
@@ -1674,7 +1673,7 @@ input[type=submit]:hover {
   <script src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/success.js"></script>
 
-      <script>
+     <!--  <script>
       
       $("#submit").click(function() {
 
@@ -1704,10 +1703,10 @@ input[type=submit]:hover {
 
 
     })
-      
 
 
-    </script>
+
+    </script> -->
 
 
 </body>
