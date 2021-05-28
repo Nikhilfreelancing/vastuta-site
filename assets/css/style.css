@@ -442,7 +442,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -451,7 +451,7 @@ section {
 
 .section-title h2::before, .section-title h2::after {
   content: '';
-  width: 50px;
+  width: 34px;
   height: 2px;
   background: #3498db;
   display: inline-block;
