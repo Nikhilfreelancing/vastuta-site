@@ -793,7 +793,7 @@ project. </strong>
       
 
 <div class="container11">
-  <form action="https://formsubmit.co/info@vastuta.in" name="contact-form" id="cont" method="POST">
+  <!-- form action="https://formsubmit.co/info@vastuta.in" name="contact-form" id="cont" method="POST">
 
     <label for="fname">Name</label>
     <input type="text" id="name" name="name" class="name" placeholder="Your name" required>
@@ -812,7 +812,26 @@ project. </strong>
  <input type="hidden" name="_template" value="table">
 
 
+    <input type="submit" value="Submit" id="submit" onclick="myfun()"> -->
+
+    <form action="https://formsubmit.co/info@vastuta.in" name ="contact-form" id="cont" method="POST">
+
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="name" class="name" placeholder="Your name" required>
+
+    <label for="mob">Mobile Number </label>
+    <input type="tel" id="phone" name="phone" class="phone" placeholder="Your Mobile Number" required>
+
+    <label for="fname">Email</label>
+    <input type="email" id="email" name="email" class="email" placeholder="Your Email" required>
+
+    <label for="fname">Message</label>
+    <input type="text" id="message" style="height:130px;" name="message" class="message" placeholder="Your message" required>
+
+    <input type="hidden" name="_next" value="https://vastuta.in/#contact">
+
     <input type="submit" value="Submit" id="submit" onclick="myfun()">
+
     <br>
     <br>
    
